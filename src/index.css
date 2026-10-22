@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body.light {
+  background-color: #f4f4f9;
+  color: #111827;
+}
+
+body.dark {
+  background-color: #1e1e2f;
+  color: #f3f4f6;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background-color: #ffffff;
+  color: #1f2937;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+body.dark button {
+  background-color: #2e3048;
+  color: #f9fafb;
+  border-color: #484b6e;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+body.dark button:hover {
+  filter: brightness(1.15);
+}
+
+input, select {
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  outline: none;
+  font-size: 0.95rem;
+}
+
+body.dark input, body.dark select {
+  background-color: #2e3048;
+  color: #f9fafb;
+  border-color: #484b6e;
+}
+
+input:focus, select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
